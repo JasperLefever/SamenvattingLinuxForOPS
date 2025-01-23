@@ -281,6 +281,11 @@ sed 's/Alice/Alicia/' names.txt
 # Replace all occurrences of "old" with "new" in a text
 echo "old old" | sed 's/old/new/g'
 
+# Replace "old" with "new" in file.txt and save to file2.txt
+sed 's|old|new|' file.txt > file2.txt
+# the | is used as a delimiter, so you can use / in the search or replace string
+
+
 # Delete lines containing "remove" in a file
 sed '/remove/d' file.txt
 ```
